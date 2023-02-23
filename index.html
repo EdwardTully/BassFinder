@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finding the Bass</title>
+</head>
+<body>
+    <div id="formcontain">
+        <h1>Largemouth Bass: Ask the Lake Oracle</h1>
+    <form id="mainform" method="" action="">
+        <label for="season">Season:</label>
+        <select name="season" id="season">
+           
+            <option value="Spring">Spring</option>
+            <option value="Summer">Summer</option>
+            <option value="Fall">Fall</option>
+            <option value="Winter">Winter</option>
+        </select>
+        <br>
+        <br>
+        <label for="wattemp">Water Temperature F:</label>
+        <input type="number" id="wattemp" name="wattemp" required>
+        <br>
+        <br>
+        <label for="barometric">Pressure in Inches:</label>
+        <input type="number" id="baro" name="baro"  required>
+        <br>
+        <br>
+        <label for="barochange">Barometric Change:  </label>
+
+        <select name="barochange" id="barochange" required>
+            <option value="steady">Steady</option>
+            <option value="falling">Falling</option>
+            <option value="rising">Rising</option>
+        </select>
+        <br>
+        <br>
+        <label for="watclar">Water Clarity:  </label>
+        <select name="watclar"id='watclar' required>
+            <option value="Clear">Clear</option>
+            <option value="Murky">Murky/Muddy/Not Clear</option>
+        </select>
+        <br>
+        <br>
+        <input type="button" id="submit" name="submit" value="SUBMIT">
+        
+        <br>
+        <br>
+        <br>
+        <textarea rows='15'cols='30'name="results" id="results" placeholder="Results...."></textarea>
+      </form>
+    </div>
+    
+</body>
+<script src="./bassalgorithm.js"></script>
+</html>

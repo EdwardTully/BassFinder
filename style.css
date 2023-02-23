@@ -1,0 +1,203 @@
+#formcontain{
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background-image: url('./DSC_0096.jpg');
+    opacity: 0.98;
+    background-position: right bottom;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+h1{
+    text-align:center;
+    font-size: 425%;
+    margin: 100px;
+    padding: 0;
+    color: white;
+    text-shadow: 0 0 4px black;
+}
+
+#mainform{
+    position: relative;
+    width: 75%;
+    margin-top: 0px;
+    margin-left: 3.5in;
+    font-size: 35px;
+    color: white;
+    text-shadow: 0 0 4px black;
+    
+    
+}
+
+select{
+    height: 35px;
+    width: 200px;
+    font-size: 30px;
+
+}
+#wattemp{
+    height: 35px;
+    width: 90px;
+    font-size: 30px;
+}
+#baro{
+    height: 35px;
+    width: 90px;
+    font-size: 30px;
+}
+
+#submit{
+    width: 140px;
+    height: 50px;
+    margin-left: 420px;
+    border-radius: 5px;
+    background-color:darkgoldenrod;
+    font-size: 30px;
+}
+#submit:hover{
+    width: 143px;
+    height: 50px;
+    background-color:hsl(43, 89%, 48%);
+}
+#submit:active{
+    background-color:hsl(43, 49%, 38%);
+}
+#reset{
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    font-size: 30px;
+
+}
+textarea{
+    font-size: 35px;
+    font-family: "Garamond";
+    background-color: transparent;
+    color: white;
+    text-shadow: 0 0 2px black;
+    border-radius: 10px;
+    width: 100%;
+    
+
+    
+}
+
+@media only screen and (max-width:1678px){
+    #mainform{
+       
+        width: 65%;
+       
+        margin-left: 3in;
+        font-size: 35px;
+       ;}
+}textarea{
+    font-size: 35px;
+    
+    background-color: transparent;
+   
+    width: 90%;
+    
+}
+@media only screen and (max-width:1251px){
+    h1{
+        font-size: 45px;
+    }
+    #submit{
+       
+        margin-left: 275px;
+       
+    }
+}
+@media only screen and (max-width:1151px){
+    h1{
+        font-size: 45px;
+    }
+    #submit{
+       
+        margin-left: 230px;
+       
+    }
+    #mainform{
+       
+        width: 65%;
+        
+        margin-left: 2in;
+        font-size: 35px;
+       ;}
+}
+@media only screen and (max-width:1040px){
+    h1{
+        font-size: 40px;
+    }
+    #submit{
+       
+        margin-left: 200px;
+       
+    }
+    #mainform{
+       
+        width: 65%;
+        font-size: 35px;
+       
+    
+       ;}
+}
+@media only screen and (max-width:780px){
+    h1{
+        font-size: 30px;
+    }
+    #submit{
+       
+        margin-left: 18%;
+       
+    }
+    #mainform{
+       
+        width: auto;
+        margin-left: 10%;
+        height: 100%;
+        font-size: 25px;
+    }
+    select{
+        height: 30px;
+        width: 120px;
+        font-size: 25px;
+    
+    }
+    #wattemp{
+        height: 30px;
+        width: 90px;
+        font-size: 25px;
+    }
+    #baro{
+        height: 30px;
+        width: 90px;
+        font-size: 25px;
+    }
+    
+    #submit{
+        width: 100px;
+        height: 30px;
+        margin-left: 20%;
+       
+        font-size: 20px;
+    }
+    textarea{
+        font-size: 25px;
+      
+    }
+    #formcontain{
+    
+        width: auto;
+        height: 100%;
+        background-color:aquamarine;
+        background-image: none;
+        display: flex;
+        flex-direction: column;
+       
+    }
+}
+
+
