@@ -131,7 +131,7 @@ const getStarted=()=>{
     }
     if (timeOfYear.value==='Winter'){
         
-            return bestLure=`NO TEMP GIVEN. Use lures that fit water conditions and this advise: ${winterLoc}`
+            return bestLure=`NO TEMP GIVEN. Use lures that fit water conditions: ${winterLoc}`
         
             }
         
