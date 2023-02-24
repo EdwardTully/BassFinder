@@ -2,7 +2,7 @@
     margin: auto;
     width: 100%;
     height: 100%;
-    background-image: url('./DSC_0096.jpg');
+    background-color:hsl(82, 39%, 20%);
     opacity: 0.98;
     background-position: right bottom;
     display: flex;
@@ -14,22 +14,35 @@ h1{
     text-align:center;
     font-size: 425%;
     margin: 100px;
-    padding: 0;
+    margin-bottom: 25px;
+    padding: 0px;
     color: white;
     text-shadow: 0 0 4px black;
+}
+h2{
+    text-align:center;
+    font-size: 325%;
+    margin-top: 25px;
+    margin: 100px;
+    
+    color: white;
+    text-shadow: 0 0 4px black;
+}
+.formandtext{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
 }
 
 #mainform{
-    position: relative;
     width: 75%;
-    margin-top: 0px;
-    margin-left: 3.5in;
+    margin-left: 10rem;
+ 
     font-size: 35px;
     color: white;
     text-shadow: 0 0 4px black;
-    
-    
-}
+    }
 
 select{
     height: 35px;
@@ -51,7 +64,9 @@ select{
 #submit{
     width: 140px;
     height: 50px;
-    margin-left: 420px;
+    margin-left: 900px;
+    margin-top: 80px;
+    margin-bottom: 80px;
     border-radius: 5px;
     background-color:darkgoldenrod;
     font-size: 30px;
@@ -71,14 +86,15 @@ select{
     font-size: 30px;
 
 }
-textarea{
+#results{
+    
     font-size: 35px;
     font-family: "Garamond";
     background-color: transparent;
     color: white;
     text-shadow: 0 0 2px black;
     border-radius: 10px;
-    width: 100%;
+    
     
 
     
