@@ -51,6 +51,12 @@ const errorB = 'PLEASE INPUT A BAROMETER READING'
 
 const getStarted=()=>{
 
+    if(timeOfYear.value==='Winter'){
+        if (temp.value.length === 0){
+            return bestLure=`NO TEMP GIVEN. Use lures that fit water conditions: ${winterLoc}`
+        }
+            }
+
     if (timeOfYear.value==='Winter'){
         
         if (temp.value>=30 && temp.value <40){
@@ -61,12 +67,7 @@ const getStarted=()=>{
         }
 
     }
-    if(timeOfYear.value==='Winter'){
-        console.log(temp.value.length)
-        if (temp.value.length === 0){
-            return bestLure=`NO TEMP GIVEN. Use lures that fit water conditions: ${winterLoc}`
-        }
-            }
+   
     if (timeOfYear.value==='Winter'){
         
         if (temp.value>=30 && temp.value <40){
@@ -135,6 +136,11 @@ const getStarted=()=>{
             return bestLure=`Water Temp OOR, Use the following unfiltered advise: ${winterLoc}`
         }
     }
+    if(timeOfYear.value==='Spring'){
+        if (temp.value.length === 0){
+            return bestLure=`NO TEMP GIVEN. Use lures that fit water conditions: ${spawn} ${postSpawn}`
+        }
+            }
     
     if (timeOfYear.value==='Spring'){
        
@@ -172,10 +178,17 @@ const getStarted=()=>{
         }
 
     }
-    if  (timeOfYear.value==='Spring'){
-        return bestLure=`NO TEMP GIVEN. Use lures that fit water conditions and this advise: ${spawn} ${postSpawn}`
-           
+    if (timeOfYear.value==='Spring'){
+        if (temp.value <59 || temp.value >=70){
+            return bestLure=`Water Temp OOR, Use the following unfiltered advise: ${spawn} ${postSpawn}`
         }
+    }
+   
+    if(timeOfYear.value==='Summer'){
+        if (temp.value.length === 0){
+            return bestLure=`NO TEMP GIVEN. Use lures that fit water conditions: ${summer}`
+            }
+                }
      if (timeOfYear.value==='Summer'){
         
         if (temp.value>=70 ){
@@ -195,9 +208,16 @@ const getStarted=()=>{
 
     }
     if (timeOfYear.value==='Summer'){
-        return bestLure=`NO TEMP GIVEN. Use lures that fit water conditions and this advise: ${summer}`
-           
+        if (temp.value <69 || temp.value >=95){
+            return bestLure=`Water Temp OOR, Use the following unfiltered advise: ${summer}`
         }
+    }
+      
+    if(timeOfYear.value==='Fall'){
+        if (temp.value.length === 0){
+            return bestLure=`NO TEMP GIVEN. Use lures that fit water conditions: ${fallLoc}`
+            }
+                }
      if (timeOfYear.value==='Fall'){
         
         if (temp.value>=65 && temp.value <70 ){
@@ -254,7 +274,7 @@ const getStarted=()=>{
     }
     if (timeOfYear.value==='Fall'){
         
-        if (temp.value <50 ){
+        if (temp.value <50 && temp.value >40){
             if (clarity.value==='Clear'){
                 return   bestLure=Fall4clear +fallLoc
             }
@@ -263,7 +283,7 @@ const getStarted=()=>{
     }
     if (timeOfYear.value==='Fall'){
         
-        if (temp.value <50 ){
+        if (temp.value <50 && temp.value >40){
             if (clarity.value==='Muddy'){
                 return   bestLure=Fall4mud +fallLoc
             }
@@ -271,9 +291,11 @@ const getStarted=()=>{
 
     }
     if (timeOfYear.value==='Fall'){
-        return bestLure=`NO TEMP GIVEN. Use lures that fit water conditions and this advise: ${fallLoc}`
-           
+        if (temp.value <40 || temp.value >=71){
+            return bestLure=`Water Temp OOR, Use the following unfiltered advise: ${fallLoc}`
         }
+    }
+    
 }
 
 const atmosphericBite =function(){
