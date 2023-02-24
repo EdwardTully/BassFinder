@@ -61,6 +61,11 @@ const getStarted=()=>{
         }
 
     }
+    if(timeOfYear.value==='Winter'){
+        if (temp.value.length = 0){
+            return bestLure=`NO TEMP GIVEN. Use lures that fit water conditions: ${winterLoc}`
+        }
+            }
     if (timeOfYear.value==='Winter'){
         
         if (temp.value>=30 && temp.value <40){
@@ -129,13 +134,7 @@ const getStarted=()=>{
             return bestLure=`Water Temp OOR, Use the following unfiltered advise: ${winterLoc}`
         }
     }
-    if(timeOfYear.value==='Winter'){
-        if (temp.value.length = 0){
-            return bestLure=`NO TEMP GIVEN. Use lures that fit water conditions: ${winterLoc}`
-        }
-            }
-
-
+    
     if (timeOfYear.value==='Spring'){
        
         if (temp.value>=60 && temp.value <65){
