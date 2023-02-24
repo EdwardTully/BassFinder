@@ -129,12 +129,12 @@ const getStarted=()=>{
             return bestLure=`Water Temp OOR, Use the following unfiltered advise: ${winterLoc}`
         }
     }
-    if (timeOfYear.value==='Winter'){
+    else if(timeOfYear.value==='Winter'){
         
             return bestLure=`NO TEMP GIVEN. Use lures that fit water conditions: ${winterLoc}`
         
             }
-        
+
 
     if (timeOfYear.value==='Spring'){
        
@@ -172,7 +172,7 @@ const getStarted=()=>{
         }
 
     }
-    if (timeOfYear.value==='Spring'){
+    if  (timeOfYear.value==='Spring'){
         return bestLure=`NO TEMP GIVEN. Use lures that fit water conditions and this advise: ${spawn} ${postSpawn}`
            
         }
