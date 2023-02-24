@@ -63,7 +63,7 @@ const getStarted=()=>{
     }
     if(timeOfYear.value==='Winter'){
         console.log(temp.value.length)
-        if (temp.value.length = 0){
+        if (temp.value.length === 0){
             return bestLure=`NO TEMP GIVEN. Use lures that fit water conditions: ${winterLoc}`
         }
             }
