@@ -125,8 +125,14 @@ const getStarted=()=>{
 
     }
     if (timeOfYear.value==='Winter'){
+        if (temp.value <30 || temp.value >=60){
+            return bestLure=`Water Temp OOR, Use the following unfiltered advise: ${winterLoc}`
+        }
+    }
+    if (timeOfYear.value==='Winter'){
+        if (temp.value = null){
             return bestLure=`NO TEMP GIVEN. Use lures that fit water conditions and this advise: ${winterLoc}`
-               
+        }
             }
         
 
