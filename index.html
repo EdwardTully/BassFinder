@@ -9,8 +9,8 @@
 </head>
 <body>
     <div id="formcontain">
-        <h1>Temperate US Largemouth Suggestions</h1>
-        <h2>Aggregated expert advise based on Lake Conditions and Season</h2>
+        <h1>New England/Mid-Atlantic Largemouth Angling Ideas</h1>
+        <h2>Aggregated expert advise based on conditions and season</h2>
         <div class="formandtext">
              <form id="mainform" method="" action="">
         <label for="season">Season:</label>
@@ -24,11 +24,11 @@
         <br>
         <br>
         <label for="wattemp">Water Temperature F:</label>
-        <input type="number" id="wattemp" name="wattemp" >
+        <input type="number" id="wattemp" name="wattemp" placeholder="65">
         <br>
         <br>
         <label for="barometric">Pressure in Inches:</label>
-        <input type="number" id="baro" name="baro"  required>
+        <input type="number" id="baro" name="baro" placeholder="29.97">
         <br>
         <br>
         <label for="barochange">Barometric Change:  </label>
@@ -49,12 +49,16 @@
         
         
       </form>
-         <textarea rows='5'cols='5'name="results" id="results" placeholder="Results...."></textarea>
+         <textarea rows='5'cols='10'name="results" id="results" ></textarea>
     </div>
     <br>
     <br>
+    <div class="buttons">
       <input type="button" id="submit" name="submit" value="SUBMIT">
+      <br>
+      <input type="button" id="printInfo" name="printInfo" value="PRINT" onclick="printDiv('textarea')">
 
+    </div>
     </div>
     
 </body>

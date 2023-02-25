@@ -1,7 +1,7 @@
 #formcontain{
     margin: auto;
     width: 100%;
-    height: 100%;
+    height: auto;
     background-color:hsl(82, 39%, 20%);
     opacity: 0.98;
     background-position: right bottom;
@@ -13,18 +13,15 @@
 h1{
     text-align:center;
     font-size: 425%;
-    margin: 100px;
-    margin-bottom: 25px;
-    padding: 0px;
+    margin: 50px 0px 10px 0px;
     color: white;
     text-shadow: 0 0 4px black;
 }
 h2{
     text-align:center;
     font-size: 325%;
-    margin-top: 25px;
-    margin: 100px;
-    
+    margin-top: 10px;
+    margin-bottom: 100px;
     color: white;
     text-shadow: 0 0 4px black;
 }
@@ -43,6 +40,10 @@ h2{
     color: white;
     text-shadow: 0 0 4px black;
     }
+::placeholder{
+    color: red;
+    opacity: 0.5;
+}
 
 select{
     height: 35px;
@@ -64,12 +65,25 @@ select{
 #submit{
     width: 140px;
     height: 50px;
-    margin-left: 900px;
-    margin-top: 80px;
-    margin-bottom: 80px;
+  
     border-radius: 5px;
     background-color:darkgoldenrod;
     font-size: 30px;
+}
+#printInfo{
+    width: 140px;
+    height: 50px;
+   
+    border-radius: 5px;
+    background-color:darkgoldenrod;
+    font-size: 30px;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 50px 20px;
+
 }
 #submit:hover{
     width: 143px;
@@ -79,6 +93,16 @@ select{
 #submit:active{
     background-color:hsl(43, 49%, 38%);
 }
+
+#printInfo:hover{
+    width: 143px;
+    height: 50px;
+    background-color:hsl(43, 89%, 48%);
+}
+#printInfo:active{
+    background-color:hsl(43, 49%, 38%);
+}
+
 #reset{
     width: 100px;
     height: 35px;
@@ -91,7 +115,10 @@ select{
     font-size: 35px;
     font-family: "Garamond";
     background-color: transparent;
+    margin-right: 200px;
     color: white;
+    height: 420px;
+    width: 100%;
     text-shadow: 0 0 2px black;
     border-radius: 10px;
     
