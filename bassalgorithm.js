@@ -355,6 +355,16 @@ const loadBox=function(){
   loadBox()
 
 }
+function printTextArea(results) {
+    var newstring = document.getElementById(results).innerHTML
+    var oldstring = document.body.innerHTML
+    document.body.innerHTML = newstring
+    window.print()
+    document.body.innerHTML = oldstring
+    return false;
+}
+
+
 
 /*const thoughtGroup = [getStarted(),atmosphericBite(),lureColor()]
 
